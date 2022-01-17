@@ -1,4 +1,74 @@
 #! python3
+
+from typing import Match
+
+a = str(input("enter name"))
+b = str(input("enter studentnumber"))
+c = str(input("enter grade"))
+d = str(input("enter class 1"))
+e = int(input("enter grade for class"))
+f = str(input("enter class 2"))
+g = int(input("enter grade for class"))
+h = str(input("enter class 3"))
+i = int(input("enter grade for class"))
+j = str(input("enter class 4"))
+k = int(input("enter grade for class"))
+l = str(input("enter class 5"))
+m = int(input("enter grade for class"))
+n = str(input("enter class 6"))
+o = int(input("enter grade for class"))
+p = str(input("enter class 7"))
+q = int(input("enter grade for class"))
+
+while True:
+ fv = input("enter a command")
+
+ def average():
+  ab = e + g + i + k + m + o + q
+  cd = int(ab)/7
+  print("Your average grade is",cd)
+
+ if fv == "average":
+  average()
+ 
+ def getHonorRoll():
+  ab = e + g + i + k + m + o + q
+  cd = int(ab)/7
+  if cd > 86:
+   print("True")
+  else:
+   print("False")
+
+ if fv == "getHonorRoll":
+  getHonorRoll()
+
+ def showCourses():
+  print(d, f, h, j, l, n, p)
+
+ if fv == "showCourses":
+   showCourses()
+
+ def showGrade():
+  if ef == d:
+   print(d,e)
+  if ef == f:
+   print(f,g)
+  if ef == h:
+   print(h,i)
+  if ef == j:
+   print(j,k)
+  if ef == l:
+   print(l,m)
+  if ef == n:
+   print(n,o)
+  if ef == p:
+   print(p,q)
+
+ if fv == "showGrade":
+   ef = input("Enter the course")
+   showGrade()
+
+
 """
 (10 points) 
 Create a class object for a student.
