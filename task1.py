@@ -68,7 +68,21 @@ while True:
    ef = input("Enter the course")
    showGrade()
 
+ def getCourses():
 
+  lst = []
+ 
+  n = int(input("Enter number of classes "))
+
+  for i in range(0, n):
+    ele = int(input("Enter class"))
+ 
+    lst.append(ele) 
+     
+    print(lst)
+ 
+ if fv == "getCourses":
+   getCourses()
 """
 (10 points) 
 Create a class object for a student.
