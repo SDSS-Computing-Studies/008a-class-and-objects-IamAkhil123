@@ -1,5 +1,67 @@
 #! python3
 
+<<<<<<< HEAD
+=======
+snm = "Akhil"
+sn = "978721"
+g = "11"
+list1 = [87,87,87,87,87]
+list2 = ["English", "Science", "Math", "PE", "Socials"]
+x = 1
+
+classproperty = " "
+list1 = " "
+list2 = " "
+
+def contructor(snm,sn,g):
+ return(snm, sn, g)
+
+def getGrades(list1):
+ classproperty = list1
+
+def Courses(list2):
+ classproperty = list2
+
+def showGrade(x):
+ return list2[x] and list1[x]
+
+def showCourses():
+ return list2
+
+def getHonorRoll():
+ sm = sum(list1)
+ sm1 = sum(list2)
+ sm2 = sm/sm1
+ if sm2 > 86:
+  return True
+ else:
+  return False
+
+def average():
+  sm = sum(list1)
+  sm1 = sum(list2)
+  sm2 = sm/sm1
+  return sm2
+
+a = contructor(snm,sn,g)
+print(a)
+
+b = getGrades(list1)
+print(b)
+
+c = Courses(list2)
+print(c)
+
+d = showGrade(x)
+print(d)
+
+showCourses()
+
+getHonorRoll()
+
+average()
+
+>>>>>>> f68db59a687cd1b57c71adf0d6746da1026f6323
 """
 (10 points) 
 Create a class object for a student.
@@ -21,7 +83,6 @@ showGrade(int)  - takes 1 parameter, the index of the list
 getCourses(list)- Receives a list of courses and stores that in the class property
 getGrades(list) - Receives a list of grades and stores that in the class property
 constructor     - should require the student name, studentNumber and grade (in that order)
-"""
 
 x = "Akhil"
 y = 978721
@@ -102,6 +163,9 @@ def main():
     st2 = student("Joe Lunchbox","12346", 11)
     st2.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st2.getGrades( [71, 98, 93, 95, 68, 81, 71])
+<<<<<<< HEAD
 
+=======
+>>>>>>> f68db59a687cd1b57c71adf0d6746da1026f6323
 main()
 """
