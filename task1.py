@@ -1,88 +1,5 @@
 #! python3
 
-from typing import Match
-
-a = str(input("enter name"))
-b = str(input("enter studentnumber"))
-c = str(input("enter grade"))
-d = str(input("enter class 1"))
-e = int(input("enter grade for class"))
-f = str(input("enter class 2"))
-g = int(input("enter grade for class"))
-h = str(input("enter class 3"))
-i = int(input("enter grade for class"))
-j = str(input("enter class 4"))
-k = int(input("enter grade for class"))
-l = str(input("enter class 5"))
-m = int(input("enter grade for class"))
-n = str(input("enter class 6"))
-o = int(input("enter grade for class"))
-p = str(input("enter class 7"))
-q = int(input("enter grade for class"))
-
-while True:
- fv = input("enter a command")
-
- def average():
-  ab = e + g + i + k + m + o + q
-  cd = int(ab)/7
-  print("Your average grade is",cd)
-
- if fv == "average":
-  average()
- 
- def getHonorRoll():
-  ab = e + g + i + k + m + o + q
-  cd = int(ab)/7
-  if cd > 86:
-   print("True")
-  else:
-   print("False")
-
- if fv == "getHonorRoll":
-  getHonorRoll()
-
- def showCourses():
-  print(d, f, h, j, l, n, p)
-
- if fv == "showCourses":
-   showCourses()
-
- def showGrade():
-  if ef == d:
-   print(d,e)
-  if ef == f:
-   print(f,g)
-  if ef == h:
-   print(h,i)
-  if ef == j:
-   print(j,k)
-  if ef == l:
-   print(l,m)
-  if ef == n:
-   print(n,o)
-  if ef == p:
-   print(p,q)
-
- if fv == "showGrade":
-   ef = input("Enter the course")
-   showGrade()
-
- def getCourses():
-
-  lst = []
- 
-  n = int(input("Enter number of classes "))
-
-  for i in range(0, n):
-    ele = int(input("Enter class"))
- 
-    lst.append(ele) 
-     
-    print(lst)
- 
- if fv == "getCourses":
-   getCourses()
 """
 (10 points) 
 Create a class object for a student.
@@ -106,6 +23,61 @@ getGrades(list) - Receives a list of grades and stores that in the class propert
 constructor     - should require the student name, studentNumber and grade (in that order)
 """
 
+x = "Akhil"
+y = 978721
+z = 11
+classproperty = []
+list = [87,83,89,76,83]
+list2 = ["math","english","science","socials","PE"]
+g = 2
+
+def contructor(x,y,z):
+  return(x,y,z)
+
+con = contructor(x,y,z)
+print(con)
+
+def getGrades(list):
+  return classproperty.append(list)
+
+def getCourses(list2):
+  return classproperty.append(list2)
+
+def showGrade(g):
+  return list2[g] and list[g]
+
+show = showGrade(g)
+print(show)
+
+def showCourses():
+  return list2
+
+showC = showCourses()
+print(showC)
+
+def getHonorRoll():
+  ns = sum(list)
+  nl = len(list2)
+  orw = ns/nl
+  if orw > 86:
+    return True
+  else: 
+    return False
+
+ghr = getHonorRoll()
+print(ghr)
+
+def average():
+  ns = sum(list)
+  nl = len(list2)
+  orw = ns/nl
+  return orw
+
+avr = average()
+print(avr)
+
+
+"""
 class student:
 
     # properties should be listed first
@@ -131,7 +103,5 @@ def main():
     st2.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st2.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
-
-
-
 main()
+"""
