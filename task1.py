@@ -1,88 +1,64 @@
 #! python3
 
-from typing import Match
+snm = "Akhil"
+sn = "978721"
+g = "11"
+list1 = [87,87,87,87,87]
+list2 = ["English", "Science", "Math", "PE", "Socials"]
+x = 1
 
-a = str(input("enter name"))
-b = str(input("enter studentnumber"))
-c = str(input("enter grade"))
-d = str(input("enter class 1"))
-e = int(input("enter grade for class"))
-f = str(input("enter class 2"))
-g = int(input("enter grade for class"))
-h = str(input("enter class 3"))
-i = int(input("enter grade for class"))
-j = str(input("enter class 4"))
-k = int(input("enter grade for class"))
-l = str(input("enter class 5"))
-m = int(input("enter grade for class"))
-n = str(input("enter class 6"))
-o = int(input("enter grade for class"))
-p = str(input("enter class 7"))
-q = int(input("enter grade for class"))
+classproperty = " "
+list1 = " "
+list2 = " "
 
-while True:
- fv = input("enter a command")
+def contructor(snm,sn,g):
+ return(snm, sn, g)
 
- def average():
-  ab = e + g + i + k + m + o + q
-  cd = int(ab)/7
-  print("Your average grade is",cd)
+def getGrades(list1):
+ classproperty = list1
 
- if fv == "average":
-  average()
- 
- def getHonorRoll():
-  ab = e + g + i + k + m + o + q
-  cd = int(ab)/7
-  if cd > 86:
-   print("True")
-  else:
-   print("False")
+def Courses(list2):
+ classproperty = list2
 
- if fv == "getHonorRoll":
-  getHonorRoll()
+def showGrade(x):
+ return list2[x] and list1[x]
 
- def showCourses():
-  print(d, f, h, j, l, n, p)
+def showCourses():
+ return list2
 
- if fv == "showCourses":
-   showCourses()
+def getHonorRoll():
+ sm = sum(list1)
+ sm1 = sum(list2)
+ sm2 = sm/sm1
+ if sm2 > 86:
+  return True
+ else:
+  return False
 
- def showGrade():
-  if ef == d:
-   print(d,e)
-  if ef == f:
-   print(f,g)
-  if ef == h:
-   print(h,i)
-  if ef == j:
-   print(j,k)
-  if ef == l:
-   print(l,m)
-  if ef == n:
-   print(n,o)
-  if ef == p:
-   print(p,q)
+def average():
+  sm = sum(list1)
+  sm1 = sum(list2)
+  sm2 = sm/sm1
+  return sm2
 
- if fv == "showGrade":
-   ef = input("Enter the course")
-   showGrade()
+a = contructor(snm,sn,g)
+print(a)
 
- def getCourses():
+b = getGrades(list1)
+print(b)
 
-  lst = []
- 
-  n = int(input("Enter number of classes "))
+c = Courses(list2)
+print(c)
 
-  for i in range(0, n):
-    ele = int(input("Enter class"))
- 
-    lst.append(ele) 
-     
-    print(lst)
- 
- if fv == "getCourses":
-   getCourses()
+d = showGrade(x)
+print(d)
+
+showCourses()
+
+getHonorRoll()
+
+average()
+
 """
 (10 points) 
 Create a class object for a student.
@@ -104,7 +80,6 @@ showGrade(int)  - takes 1 parameter, the index of the list
 getCourses(list)- Receives a list of courses and stores that in the class property
 getGrades(list) - Receives a list of grades and stores that in the class property
 constructor     - should require the student name, studentNumber and grade (in that order)
-"""
 
 class student:
 
@@ -130,8 +105,5 @@ def main():
     st2 = student("Joe Lunchbox","12346", 11)
     st2.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st2.getGrades( [71, 98, 93, 95, 68, 81, 71])
-
-
-
-
 main()
+"""
